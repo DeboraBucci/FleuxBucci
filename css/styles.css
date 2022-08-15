@@ -35,6 +35,23 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-purple);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #96705b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 112, 91, 0.8);
+}
+
 /* NAVBAR ------------------------------------------------------ */
 .navbar {
   display: flex;
