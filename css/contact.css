@@ -86,6 +86,7 @@
 .contact__input-group label {
   position: absolute;
   left: 4.5rem;
+  transition: all 0.2s;
 }
 
 /* ANIMATION OF LABEL GOING UP */
@@ -97,7 +98,7 @@
 
 .contact__input-group input:not(:focus):not(:placeholder-shown) + label,
 .contact__input-group textarea:not(:focus):not(:placeholder-shown) + label {
-  transform: translate(-3.3rem, -4rem);
+  transform: translate(-3.3rem, -3rem);
   color: rgba(var(--color-purple), 0.5);
 }
 
