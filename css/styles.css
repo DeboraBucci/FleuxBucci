@@ -1,8 +1,11 @@
 :root {
   --color-navbar: #383a63;
   --color-dark-purple: #1a1423;
+  --color-purple: 61, 48, 74;
+  --color-second-purple: #684756;
   --color-white: #f9f9f9;
   --color-brown: #96705b;
+  --color-grey: #929292;
 }
 
 html {
@@ -16,6 +19,10 @@ html {
 }
 
 body {
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+button {
   font-family: "Tiro Gurmukhi", serif;
 }
 

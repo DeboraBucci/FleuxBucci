@@ -1,0 +1,117 @@
+.contact {
+  background-color: var(--color-white);
+}
+
+.contact__p {
+  padding: 3rem 7rem;
+  font-size: 2rem;
+  color: var(--color-grey);
+}
+
+.contact__content {
+  max-width: 92rem;
+  margin: 0 auto;
+}
+
+.contact__heading h2 {
+  font-size: 4.8rem;
+  font-weight: 100;
+  color: rgb(var(--color-purple));
+}
+
+.contact__heading p {
+  color: var(--color-brown);
+  font-size: 2rem;
+  margin-top: -1.6rem;
+}
+
+.contact__form {
+  padding: 4rem 0;
+}
+
+.contact__inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__form button {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(var(--color-purple), 1);
+  color: var(--color-white);
+  padding: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.contact__form button:hover {
+  transform: translateY(-2px);
+  background-color: rgba(var(--color-purple), 0.8);
+}
+
+.contact__input-group {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid rgba(var(--color-purple), 0.2);
+  border-radius: 1px;
+  width: 44rem;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  transition: all 0.2s;
+}
+
+.contact__input-group i {
+  width: 2rem;
+  color: rgba(var(--color-purple), 0.7);
+}
+
+.contact__input-group label {
+  color: rgba(var(--color-purple), 0.5);
+}
+
+.contact__input-group input,
+.contact__input-group textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: calc(100% - 3.5rem);
+  height: 100%;
+}
+
+.contact__input-group label {
+  position: absolute;
+  left: 4.5rem;
+}
+
+/* ANIMATION OF LABEL GOING UP */
+.contact__input-group input:focus + label,
+.contact__input-group textarea:focus + label {
+  transform: translate(-3.3rem, -4rem);
+  color: var(--color-brown);
+}
+
+.contact__input-group input:not(:focus):not(:placeholder-shown) + label,
+.contact__input-group textarea:not(:focus):not(:placeholder-shown) + label {
+  transform: translate(-3.3rem, -4rem);
+  color: rgba(var(--color-purple), 0.5);
+}
+
+/* IMPORTANT FOR ANIMATION OF LABEL GOING UP */
+.contact__input-group input::placeholder,
+.contact__input-group textarea::placeholder {
+  color: transparent;
+}
+
+.contact__input-group:focus-within {
+  border-color: transparent;
+  box-shadow: 0 0 0 1rem rgba(var(--color-purple), 0.2);
+}
+
+.contact__input-group:focus-within i {
+  color: var(--color-brown);
+}

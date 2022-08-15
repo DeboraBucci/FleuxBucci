@@ -25,6 +25,7 @@
 
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -52,7 +53,48 @@
       </ul>
     </nav>
 
-    <section class="contact"></section>
+    <section class="contact">
+      <p class="contact__p">HOME/ CONTACT</p>
+      <div class="contact__content">
+        <div class="contact__heading">
+          <h2>Contact Us</h2>
+          <p>we are happy to know your thoughts</p>
+        </div>
+        <form class="contact__form">
+          <div class="contact__inputs-container">
+            <div class="contact__main-group">
+              <div class="contact__input-group">
+                <i class="fa-solid fa-signature"></i>
+                <input id="name" type="text" placeholder="name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="contact__input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="email" type="email" placeholder="email" />
+                <label for="email">Email</label>
+              </div>
+              <div class="contact__input-group">
+                <i class="fa-solid fa-phone"></i>
+                <input id="number" type="text" placeholder="number" />
+                <label for="number">Number</label>
+              </div>
+              <div class="contact__input-group">
+                <i class="fa-solid fa-globe"></i>
+                <input id="country" type="text" placeholder="country" />
+                <label for="country">Country</label>
+              </div>
+            </div>
+            <div class="contact__input-group">
+              <i class="fa-solid fa-feather-pointed"></i>
+              <textarea id="comment" placeholder="comment"></textarea>
+              <label for="comment">Comment</label>
+            </div>
+          </div>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer__first-container">
