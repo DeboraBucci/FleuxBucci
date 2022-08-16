@@ -53,13 +53,12 @@ a {
 }
 
 /* NAVBAR ------------------------------------------------------ */
-/* replaces space of fixed navbar */
-.navbar-space {
-  height: 8rem;
-  padding: 0 7rem;
-}
 .navbar {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 999;
   display: flex;
