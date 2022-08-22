@@ -67,6 +67,12 @@ a {
   padding: 0 7rem;
 }
 
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar__list {
   display: flex;
   font-size: 2.4rem;
@@ -176,7 +182,7 @@ a {
   font-size: 1.2rem;
 }
 
-/* INDEX PAGE ------------------------------------------------------ */
+/* INDEX (HOME) PAGE ------------------------------------------------------ */
 .home__group {
   position: relative;
 }
