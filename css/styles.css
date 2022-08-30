@@ -1,11 +1,11 @@
 :root {
-  --color-navbar: #383a63;
-  --color-dark-purple: #1a1423;
-  --color-purple: 61, 48, 74;
-  --color-second-purple: #684756;
-  --color-white: #f9f9f9;
-  --color-brown: #96705b;
-  --color-grey: #929292;
+  --color-navbar: 56, 58, 99; /* #383a63 */
+  --color-dark-purple: 26, 20, 35; /* #1a1423 */
+  --color-purple: 61, 48, 74; /* #3d304a */
+  --color-second-purple: 104, 71, 86; /* #684756 */
+  --color-white: 249, 249, 249; /* #f9f9f9 */
+  --color-brown: 150, 112, 91; /* #96705b */
+  --color-grey: 146, 146, 146; /* #929292 */
 }
 
 html {
@@ -35,21 +35,39 @@ a {
   text-decoration: none;
 }
 
+/* SCROLLBAR  */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-dark-purple);
+  background: rgb(var(--color-dark-purple));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #96705b;
+  background: rgb(var(--color-brown));
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(150, 112, 91, 0.8);
+  background: rgba(var(--color-brown), 0.8);
+}
+
+/* HEADING ----------------------------------------------------- */
+.heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.heading h2 {
+  font-size: 4.8rem;
+  color: #3d314a;
+  font-weight: 400;
+}
+
+.heading p {
+  margin-top: -1.25rem;
+  color: rgb(var(--color-brown));
+  font-size: 2rem;
 }
 
 /* HEADER ------------------------------------------------------ */
@@ -62,7 +80,7 @@ a {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  background-color: var(--color-navbar);
+  background-color: rgb(var(--color-navbar));
   height: 8rem;
   padding: 0 7rem;
 }
@@ -90,12 +108,12 @@ a {
 }
 
 .header__link i {
-  color: var(--color-brown);
+  color: rgb(var(--color-brown));
 }
 
 .header__link a:link,
 .header__link a:visited {
-  color: var(--color-white);
+  color: rgb(var(--color-white));
 
   margin-bottom: -7px; /* NEUTRALIZE BORDER BOTTOM SPACE */
 }
@@ -107,14 +125,14 @@ a {
 }
 
 .header__link--active {
-  border-color: var(--color-brown);
+  border-color: rgb(var(--color-brown));
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 /* FOOTER ------------------------------------------------------ */
 .footer {
-  background-color: var(--color-dark-purple);
-  color: var(--color-white);
+  background-color: rgb(var(--color-dark-purple));
+  color: rgb(var(--color-white));
   height: 29.6rem;
   display: flex;
   justify-content: space-between;
@@ -199,7 +217,7 @@ a {
 }
 
 .slider__img-text {
-  background-color: rgba(27, 20, 36, 0.7);
+  background-color: rgba(var(--color-dark-purple), 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -210,7 +228,7 @@ a {
   width: 60%;
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
 
-  color: var(--color-white);
+  color: rgb(var(--color-white));
 }
 
 .slider__text-box {
@@ -235,23 +253,6 @@ a {
   padding: 2.5rem;
 }
 
-.categories__heading {
-  text-align: center;
-  padding-bottom: 2.4rem;
-}
-
-.categories__heading h2 {
-  font-size: 4.8rem;
-  color: #3d314a;
-  font-weight: 400;
-}
-
-.categories__heading p {
-  margin-top: -1.25rem;
-  color: #96705b;
-  font-size: 2rem;
-}
-
 .categories__container {
   display: grid;
   grid-template-columns: repeat(2, 3fr) 4fr 5fr;
@@ -260,23 +261,23 @@ a {
 
 .categories__box--1 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/kids.webp");
 }
 
 .categories__box--2 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/outdoor.webp");
 }
 .categories__box--3 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/indoor.webp");
 
@@ -285,8 +286,8 @@ a {
 
 .categories__box--4 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/best-selling.webp");
 
@@ -296,8 +297,8 @@ a {
 
 .categories__box--5 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/living-room.webp");
 
@@ -307,8 +308,8 @@ a {
 
 .categories__box--6 {
   background: linear-gradient(
-      rgba(150, 112, 91, 0.25),
-      rgba(150, 112, 91, 0.25)
+      rgba(var(--color-brown), 0.25),
+      rgba(var(--color-brown), 0.25)
     ),
     url("../assets/home-categories/office.webp");
 }
@@ -330,15 +331,54 @@ a {
   text-shadow: 6px 5px 0 #684756;
 }
 
+/* FEATURES */
+.features {
+  margin: 6rem;
+}
+
+.features__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.features__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 25rem;
+  height: 20rem;
+  text-align: center;
+}
+
+.features__box i {
+  color: rgb(var(--color-purple), 0.7);
+  font-size: 6.4rem;
+}
+
+.features__box h4 {
+  color: rgb(var(--color-purple), 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  width: 18rem;
+}
+
+.features__box p {
+  color: rgb(var(--color-grey));
+  font-size: 2rem;
+}
 /* CONTACT PAGE ------------------------------------------------------ */
 .contact {
-  background-color: var(--color-white);
+  background-color: rgb(var(--color-white));
 }
 
 .contact__p {
   padding: 3rem 7rem;
   font-size: 2rem;
-  color: var(--color-grey);
+  color: rgb(var(--color-grey));
 }
 
 .contact__content {
@@ -353,7 +393,7 @@ a {
 }
 
 .contact__heading p {
-  color: var(--color-brown);
+  color: rgb(var(--color-brown));
   font-size: 2rem;
   margin-top: -1.6rem;
 }
@@ -371,7 +411,7 @@ a {
   cursor: pointer;
   border: none;
   background-color: rgba(var(--color-purple), 1);
-  color: var(--color-white);
+  color: rgb(var(--color-white));
   padding: 1rem;
   width: 100%;
   font-size: 2rem;
@@ -426,7 +466,7 @@ a {
 .contact__input-group input:focus + label,
 .contact__input-group textarea:focus + label {
   transform: translate(-3.3rem, -4rem);
-  color: var(--color-brown);
+  color: rgb(var(--color-brown));
 }
 
 .contact__input-group input:not(:focus):not(:placeholder-shown) + label,
@@ -447,5 +487,5 @@ a {
 }
 
 .contact__input-group:focus-within i {
-  color: var(--color-brown);
+  color: rgb(var(--color-brown));
 }
