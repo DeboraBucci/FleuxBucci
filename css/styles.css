@@ -6,6 +6,7 @@
   --color-white: 249, 249, 249; /* #f9f9f9 */
   --color-brown: 150, 112, 91; /* #96705b */
   --color-grey: 146, 146, 146; /* #929292 */
+  --color-gold: 173, 136, 80; /* #ad8850 */
 }
 
 html {
@@ -370,6 +371,102 @@ a {
   color: rgb(var(--color-grey));
   font-size: 2rem;
 }
+
+/* WEEKLY */
+.weekly {
+  padding: 3rem;
+  margin: 3rem;
+  background-color: rgb(var(--color-dark-purple));
+}
+
+.weekly h2 {
+  color: rgb(var(--color-white));
+}
+
+.weekly__container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.weekly__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: rgb(var(--color-second-purple));
+  padding: 3px;
+  width: 30rem;
+  height: 45rem;
+}
+
+.weekly__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+.weekly__title h3 {
+  color: rgb(var(--color-white));
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.weekly__content--1 {
+  background: url("../assets/home-weekly/rupert-bookshelf.webp");
+}
+
+.weekly__content--2 {
+  background: url("../assets/home-weekly/retro-tub-chair.webp");
+}
+
+.weekly__content--3 {
+  background: url("../assets/home-weekly/eams-chair.webp");
+}
+
+.weekly__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.6rem;
+
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+.weekly__content button {
+  position: relative;
+  border: none;
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  background-color: rgb(var(--color-purple));
+  color: rgb(var(--color-white));
+}
+
+.weekly__content button::before,
+.weekly__content button::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(var(--color-gold));
+  bottom: 0.8rem;
+}
+
+.weekly__content button::before {
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 80%;
+}
+
+.weekly__content button::after {
+  right: 1.5rem;
+  height: 70%;
+  width: 0.5rem;
+}
+
 /* CONTACT PAGE ------------------------------------------------------ */
 .contact {
   background-color: rgb(var(--color-white));
