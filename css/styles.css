@@ -53,10 +53,13 @@ a {
 
 /* GRID LAYOUTS */
 
-.home__grid,
+.home__grid {
+  grid-template-rows: 8rem auto 30rem;
+}
+
 .products__grid {
   display: grid;
-  grid-template-rows: 8rem 8rem auto 30rem;
+  grid-template-rows: repeat(2, 8rem) auto 30rem;
 }
 
 .home__grid {
