@@ -71,11 +71,6 @@ a {
 }
 
 .products__grid {
-  /* grid-template-areas:
-    "header header header header"
-    "empty path empty empty"
-    "empty sidebar section empty"
-    "footer footer footer footer"; */
   grid-template-areas:
     "header header header header"
     "_ path path __"
