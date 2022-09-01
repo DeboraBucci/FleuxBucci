@@ -304,70 +304,61 @@ a {
 }
 
 .categories__container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 3fr) 4fr 5fr;
   grid-template-rows: repeat(2, 35rem);
 }
 
-.categories__box--1 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/kids.webp");
+.categories__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--color-brown), 0.25);
+  z-index: 10;
 }
 
-.categories__box--2 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/outdoor.webp");
-}
 .categories__box--3 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/indoor.webp");
-
   grid-column: 1/3;
 }
 
 .categories__box--4 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/best-selling.webp");
-
   grid-column: 3/4;
   grid-row: 1/3;
 }
 
 .categories__box--5 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/living-room.webp");
-
   grid-column: 4/5;
   grid-row: 1/2;
 }
 
-.categories__box--6 {
-  background: linear-gradient(
-      rgba(var(--color-brown), 0.25),
-      rgba(var(--color-brown), 0.25)
-    ),
-    url("../assets/home-categories/office.webp");
+.categories__box {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.categories__box {
-  background-size: cover;
-  background-position: center;
+.categories__box img {
+  width: 100%;
+  transition: all 0.2s;
+}
 
+.categories__box--2 img {
+  width: auto !important;
+  height: 100%;
+}
+
+.categories__box div {
+  position: absolute;
+  z-index: 15;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,6 +370,10 @@ a {
   font-weight: 100;
   color: #fff;
   text-shadow: 6px 5px 0 #684756;
+}
+
+.categories__box:hover img {
+  transform: scale(1.1);
 }
 
 /* FEATURES */
