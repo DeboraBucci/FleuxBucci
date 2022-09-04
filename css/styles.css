@@ -131,7 +131,7 @@ a {
     "_ path path __ __"
     "_ sidebar ____ section ___"
     "footer footer footer footer footer";
-  grid-template-columns: 5% 28rem 8% auto 5%;
+  grid-template-columns: 5% 28rem 8% auto 10%;
 }
 
 .products__grid header {
@@ -762,11 +762,20 @@ a {
 }
 
 .products {
+  margin-bottom: 6rem;
   text-align: end;
+}
+
+.products__text {
+  font-size: 1.2rem;
+  color: rgb(var(--color-grey));
 }
 
 .products__container {
   display: flex;
+  gap: 6.35rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
 
 .product-card {
