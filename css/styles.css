@@ -921,6 +921,14 @@ a {
 }
 
 .contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 4rem 0 8rem 0;
+}
+
+.contact__content,
+.contact__heading {
   max-width: 92rem;
   margin: 0 auto;
 }
@@ -935,10 +943,6 @@ a {
   color: rgb(var(--color-brown));
   font-size: 2rem;
   margin-top: -1.6rem;
-}
-
-.contact__form {
-  padding: 4rem 0;
 }
 
 .contact__inputs-container {
@@ -1027,6 +1031,57 @@ a {
 
 .contact__input-group:focus-within i {
   color: rgb(var(--color-brown));
+}
+
+.contact__features {
+  display: flex;
+  gap: 4rem;
+}
+
+.contact__feature {
+  text-align: center;
+  width: 28rem;
+  color: rgba(var(--color-purple), 0.7);
+}
+
+.contact__feature i {
+  font-size: 4.8rem;
+}
+
+.contact__feature h3 {
+  font-weight: 100;
+  font-size: 2.4rem;
+}
+
+.contact__feature p {
+  font-size: 1.6rem;
+  color: rgba(var(--color-purple), 0.5);
+}
+
+.contact__map {
+  position: relative;
+  overflow: hidden;
+  width: 95rem;
+}
+
+.contact__map-dot {
+  position: absolute;
+  font-size: 2.5rem;
+  color: crimson;
+}
+
+.contact__map-dot--1 {
+  top: 20rem;
+}
+
+.contact__map-dot--2 {
+  right: 3rem;
+  top: 11rem;
+}
+
+.contact__map-dot--3 {
+  right: 40rem;
+  top: 30rem;
 }
 
 /* MEDIA QUERIES */
