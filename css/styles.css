@@ -107,6 +107,33 @@ a {
   right: 1.5rem;
 }
 
+.current-path {
+  padding: 3rem 7rem;
+  font-size: 2rem;
+  color: rgb(var(--color-grey));
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.heading h2 {
+  font-size: 4.8rem;
+  color: #3d314a;
+  font-weight: 400;
+}
+
+.heading p {
+  margin-top: -1.25rem;
+  color: rgb(var(--color-brown));
+  font-size: 2rem;
+}
+
+.heading--start {
+  text-align: start;
+}
+
 /* GRID LAYOUTS */
 .home__grid {
   grid-template-rows: repeat(3, auto);
@@ -157,24 +184,7 @@ a {
 .products__grid footer {
   grid-area: footer;
 }
-
-/* HEADING ----------------------------------------------------- */
-.heading {
-  text-align: center;
-  margin-bottom: 2.4rem;
-}
-
-.heading h2 {
-  font-size: 4.8rem;
-  color: #3d314a;
-  font-weight: 400;
-}
-
-.heading p {
-  margin-top: -1.25rem;
-  color: rgb(var(--color-brown));
-  font-size: 2rem;
-}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* HEADER ------------------------------------------------------ */
 .header {
@@ -307,6 +317,7 @@ a {
 .footer__second-container p {
   font-size: 1.2rem;
 }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* INDEX PAGE ------------------------------------------------------ */
 /* SLIDER */
@@ -703,6 +714,7 @@ a {
   position: absolute;
   right: 0;
 }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* PRODUCT PAGE ------------------------------------------------------ */
 .path {
@@ -908,16 +920,11 @@ a {
   justify-content: center;
   height: 5rem;
 }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* CONTACT PAGE ------------------------------------------------------ */
 .contact {
   background-color: rgb(var(--color-white));
-}
-
-.contact__p {
-  padding: 3rem 7rem;
-  font-size: 2rem;
-  color: rgb(var(--color-grey));
 }
 
 .contact__content {
@@ -928,21 +935,9 @@ a {
 }
 
 .contact__content,
-.contact__heading {
+.contact .heading {
   max-width: 92rem;
   margin: 0 auto;
-}
-
-.contact__heading h2 {
-  font-size: 4.8rem;
-  font-weight: 100;
-  color: rgb(var(--color-purple));
-}
-
-.contact__heading p {
-  color: rgb(var(--color-brown));
-  font-size: 2rem;
-  margin-top: -1.6rem;
 }
 
 .contact__inputs-container {
@@ -1083,6 +1078,122 @@ a {
   right: 40rem;
   top: 30rem;
 }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* US PAGE ------------------------------------------------------ */
+
+.us .heading {
+  max-width: 121rem;
+  margin: 0 auto;
+}
+
+.us__main {
+  max-width: 121rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 8rem 0;
+}
+
+.us__maps {
+  display: flex;
+  justify-content: space-between;
+  width: 121rem;
+}
+
+.us__map {
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3px;
+}
+
+.us__map i {
+  position: absolute;
+  font-size: 2rem;
+  color: crimson;
+}
+
+.us__map p {
+  font-size: 2.4rem;
+  color: rgb(var(--color-gold));
+}
+
+.us__map h3 {
+  font-weight: 100;
+  font-size: 3.2rem;
+  color: rgb(var(--color-white));
+}
+
+.us__map div {
+  position: absolute;
+  padding-top: 1rem;
+  bottom: 7px;
+  left: 3px;
+  width: calc(100% - 6px);
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.us__map--1 i {
+  top: 12rem;
+  right: 8rem;
+}
+
+.us__map--2 i {
+  bottom: 10rem;
+  right: 16rem;
+}
+
+.us__map--3 i {
+  bottom: 18rem;
+  left: 1rem;
+}
+
+.us__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.us__features {
+  display: grid;
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: repeat(2, max-content);
+  gap: 6rem;
+  text-align: center;
+}
+
+.us__feature {
+  color: rgba(var(--color-purple), 0.7);
+}
+
+.us__feature i {
+  font-size: 4.8rem;
+}
+
+.us__feature h3 {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.us__feature p {
+  font-size: 1.6rem;
+  color: rgba(var(--color-purple), 0.5);
+}
+
+.us__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55rem;
+  overflow: hidden;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* MEDIA QUERIES */
 /* FOR HOME PAGE
