@@ -63,7 +63,129 @@
       </nav>
     </header>
 
-    <section class="cart"></section>
+    <section class="cart">
+      <p class="current-path">HOME/ CART</p>
+
+      <div class="heading heading--start">
+        <h2>Your Cart</h2>
+        <p>these are the items in your cart</p>
+      </div>
+
+      <main class="cart__main">
+        <div class="cart__first-container">
+          <table class="cart__products">
+            <!-- HEADINGS -->
+            <tr>
+              <th>PRODUCT</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+            </tr>
+
+            <!-- ITEM ONE -->
+            <tr class="cart__item">
+              <td>
+                <div class="cart__x">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <img width="50px" src="../assets/cart/cart-img-1.webp" />
+                <h3>Solid Circular Oak Table</h3>
+              </td>
+              <td><p>$ 624.99</p></td>
+              <td class="cart__quantity">
+                <div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <div>1</div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- ITEM TWO -->
+            <tr class="cart__item">
+              <td>
+                <div class="cart__x">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <img width="50px" src="../assets/cart/cart-img-2.webp" />
+                <h3>Rectangular Maple Wooden Table</h3>
+              </td>
+              <td><p>$ 392.00</p></td>
+              <td class="cart__quantity">
+                <div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <div>1</div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- ITEM THREE -->
+            <tr class="cart__item">
+              <td>
+                <div class="cart__x">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <img width="50px" src="../assets/cart/cart-img-3.webp" />
+                <h3>L-shaped black premium leather couch</h3>
+              </td>
+              <td><p>$ 1202.10</p></td>
+              <td class="cart__quantity">
+                <div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <div>1</div>
+                  <div class="cart__quantity--btn">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <div class="cart__first-cta">
+            <button class="cart__first-cta--border">
+              <i class="fa-solid fa-chevron-left"></i> KEEP BUYING
+            </button>
+
+            <button class="cart__first-cta--filled">
+              <i class="fa-solid fa-rotate-right"></i> REFRESH CART
+            </button>
+
+            <button class="cart__first-cta--border">
+              <i class="fa-solid fa-trash-can"></i> EMPTY CART
+            </button>
+          </div>
+        </div>
+        <div class="cart__line"></div>
+        <div class="cart__price">
+          <div class="cart__price-text">
+            <h3>CART'S TOTAL PRICE</h3>
+            <div class="cart__price-item">
+              <p>Shipping</p>
+              <p>Estimated time of 15 days after purchase</p>
+            </div>
+            <div class="cart__price-item">
+              <p>Coupon Code</p>
+              <input type="text" />
+            </div>
+            <div class="cart__price-item">
+              <p>Total</p>
+              <p class="cart__price-total">$ 2219.09</p>
+            </div>
+          </div>
+          <button>BUY OUT</button>
+        </div>
+      </main>
+    </section>
 
     <footer class="footer">
       <div class="footer__first-container">
