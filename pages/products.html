@@ -34,13 +34,13 @@
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body class="products__grid">
-    <header class="header">
-      <a class="header__logo" href="../index.html"
+  <body class="container-fluid g-0">
+    <header class="header justify-content-between row g-0">
+      <a class="header__logo col-2 col-lg-12" href="../index.html"
         ><img src="../assets/logo-blue-background.webp" alt="logo"
       /></a>
 
-      <nav class="header__navbar">
+      <nav class="header__navbar col">
         <ul class="header__list">
           <li class="header__link">
             <a href="../index.html"
@@ -71,242 +71,244 @@
       </nav>
     </header>
 
-    <p class="path">HOME/ PRODUCTS</p>
+    <p class="current-path row">HOME/ PRODUCTS</p>
 
-    <aside class="sidebar">
-      <div class="sidebar__container">
-        <h2 class="sidebar__title">CATEGORIES</h2>
-        <ul class="sidebar__list">
-          <li>
-            <div class="sidebar__item sidebar__item--1">
-              <span>KIDS</span> <i class="fa-solid fa-chevron-down"></i>
-            </div>
-          </li>
-          <li>
-            <div class="sidebar__item sidebar__item--2">
-              <span>INDOOR</span> <i class="fa-solid fa-chevron-down"></i>
-            </div>
-          </li>
-          <li>
-            <div class="sidebar__item sidebar__item--active sidebar__item--3">
-              <span>OUTDOOR</span> <i class="fa-solid fa-chevron-up"></i>
-            </div>
-            <ul class="sidebar__item-list">
-              <li>SEE ALL</li>
-              <li>CHAIRS</li>
-              <li class="sidebar__active-span">TABLES</li>
-              <li>POTS</li>
-              <li>FIREPLACE</li>
-              <li>LIGHTS</li>
-              <li>DECORATION</li>
-              <li>PAINTS</li>
-            </ul>
-          </li>
-          <li class="sidebar__item sidebar__item--4">
-            <span>LIVING ROOM</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--5">
-            <span>BEDROOM</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--6">
-            <span>KITCHEN</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--7">
-            <span>VINTAGE</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--8">
-            <span>CHAIRS</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--9">
-            <span>TABLES</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--10">
-            <span>MISCELLANEOUS</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--11">
-            <span>BEST SELLING</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--12">
-            <span>OFFICE</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-          <li class="sidebar__item sidebar__item--13">
-            <span>COMBOS</span> <i class="fa-solid fa-chevron-down"></i>
-          </li>
-        </ul>
+    <div class="products__content row justify-content-between">
+      <aside class="sidebar col-2">
+        <div class="sidebar__container">
+          <h2 class="sidebar__title">CATEGORIES</h2>
+          <ul class="sidebar__list">
+            <li>
+              <div class="sidebar__item sidebar__item--1">
+                <span>KIDS</span> <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__item sidebar__item--2">
+                <span>INDOOR</span> <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar__item sidebar__item--active sidebar__item--3">
+                <span>OUTDOOR</span> <i class="fa-solid fa-chevron-up"></i>
+              </div>
+              <ul class="sidebar__item-list">
+                <li>SEE ALL</li>
+                <li>CHAIRS</li>
+                <li class="sidebar__active-span">TABLES</li>
+                <li>POTS</li>
+                <li>FIREPLACE</li>
+                <li>LIGHTS</li>
+                <li>DECORATION</li>
+                <li>PAINTS</li>
+              </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--4">
+              <span>LIVING ROOM</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--5">
+              <span>BEDROOM</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--6">
+              <span>KITCHEN</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--7">
+              <span>VINTAGE</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--8">
+              <span>CHAIRS</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--9">
+              <span>TABLES</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--10">
+              <span>MISCELLANEOUS</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--11">
+              <span>BEST SELLING</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--12">
+              <span>OFFICE</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+            <li class="sidebar__item sidebar__item--13">
+              <span>COMBOS</span> <i class="fa-solid fa-chevron-down"></i>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="sidebar-opener">
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
-    </aside>
 
-    <div class="sidebar-opener">
-      <i class="fa-solid fa-chevron-right"></i>
+      <section class="products col-8">
+        <p class="products__text">8 results for outdoor tables</p>
+
+        <div class="products__container">
+          <!--CARD ONE -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-1.webp"
+              alt="beautiful outdoor wooden table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Beautiful Boat Wooden Table</p>
+                <p>$ 250.20</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD TWO -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-4.webp"
+              alt="beautiful outdoor wooden table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Long Pine Wood Table</p>
+                <p>$ 242.72</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD THREE -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-11.webp"
+              alt="beautiful outdoor wooden table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Rectangle Oak Wood Table</p>
+                <p>$ 481.00</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD FOUR -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-13.webp"
+              alt="Circular Iron Table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Circular Iron Table</p>
+                <p>$ 422.59</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD FIVE -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-14.webp"
+              alt="Rectangular Iron Table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Rectangular Iron Table</p>
+                <p>$ 384.99</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD SIX -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-12.webp"
+              alt="Circular Marble Table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Modern Circular Marble...</p>
+                <p>$ 992.00</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD SEVEN -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-9.webp"
+              alt="Solid Circular Oak Table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Solid Circular Oak Table</p>
+                <p>$ 624.99</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD SIX -->
+          <div class="product-card">
+            <img
+              src="../assets/products/product-6.webp"
+              alt="Rectangular Maple Wooden Table"
+            />
+
+            <div class="product-card__content">
+              <div class="product-card__text">
+                <p>Rectangular Maple Wood</p>
+                <p>$ 392.00</p>
+              </div>
+              <div class="product-card__btn">
+                <button class="btn__details btn__details--small">
+                  See details <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-    <section class="products">
-      <p class="products__text">8 results for outdoor tables</p>
-
-      <div class="products__container">
-        <!--CARD ONE -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-1.webp"
-            alt="beautiful outdoor wooden table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Beautiful Boat Wooden Table</p>
-              <p>$ 250.20</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD TWO -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-4.webp"
-            alt="beautiful outdoor wooden table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Long Pine Wood Table</p>
-              <p>$ 242.72</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD THREE -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-11.webp"
-            alt="beautiful outdoor wooden table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Rectangle Oak Wood Table</p>
-              <p>$ 481.00</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD FOUR -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-13.webp"
-            alt="Circular Iron Table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Circular Iron Table</p>
-              <p>$ 422.59</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD FIVE -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-14.webp"
-            alt="Rectangular Iron Table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Rectangular Iron Table</p>
-              <p>$ 384.99</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD SIX -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-12.webp"
-            alt="Circular Marble Table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Modern Circular Marble...</p>
-              <p>$ 992.00</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD SEVEN -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-9.webp"
-            alt="Solid Circular Oak Table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Solid Circular Oak Table</p>
-              <p>$ 624.99</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD SIX -->
-        <div class="product-card">
-          <img
-            src="../assets/products/product-6.webp"
-            alt="Rectangular Maple Wooden Table"
-          />
-
-          <div class="product-card__content">
-            <div class="product-card__text">
-              <p>Rectangular Maple Wood</p>
-              <p>$ 392.00</p>
-            </div>
-            <div class="product-card__btn">
-              <button class="btn__details btn__details--small">
-                See details <i class="fa-solid fa-bag-shopping"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer class="footer">
       <div class="footer__first-container">
