@@ -467,26 +467,18 @@ a {
 /* THIRD SLIDE */
 .slider__img-text--3 {
   justify-content: flex-start;
+  align-items: flex-start;
   top: 0;
-  /* right: 0;
-  clip-path: polygon(0 0, 100% 100%, 100% 0); */
-
   left: 0;
   clip-path: polygon(0 0, 0 100%, 100% 0);
-
-  align-items: flex-start;
   width: 90%;
-
   color: rgb(var(--color-white));
   background-color: rgba(220, 20, 60, 0.95);
 }
 
-.slider__img-text--3 .slider__img-icon {
-}
-
 .slider__img-text--3 .slider__text-box {
   align-self: start;
-  background-color: black;
+  height: 70%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -508,6 +500,48 @@ a {
 }
 
 /* FOURTH SLIDE */
+.slider__img-text--4 {
+  top: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140rem;
+  height: 40rem;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+  color: rgb(var(--color-white));
+  background-color: rgba(66, 95, 184, 0.95);
+}
+
+.slider__img-text--4 .slider__text-box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__img-text--4 .slider__img-text--big {
+  font-size: 8rem;
+}
+
+.slider__img-text--4 .slider__img-text--small {
+  font-size: 3rem;
+  width: 40rem;
+  line-height: 3rem;
+  margin-top: -1rem;
+  color: rgb(var(--color-dark-purple));
+}
+
+.slider__img-text--4 button {
+  margin-top: 2rem;
+  border: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(var(--color-white));
+  color: rgb(var(--color-white));
+}
 
 /* CATEGORIES */
 .categories {
@@ -1610,6 +1644,28 @@ a {
   .slider__text-box {
     margin-left: 0px !important;
     width: 100%;
+  }
+
+  .slider__img-text {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider__img-text--2 {
+    align-items: center;
+  }
+
+  .slider__img-text--3 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider__img-text--2 .slider__text-box {
+    width: 60% !important;
+  }
+
+  .slider__img-text--3 .slider__text-box {
+    align-self: center;
   }
 
   .testimonials__card-heading {
