@@ -381,6 +381,10 @@ a {
   margin-top: -0.1rem;
 }
 
+.slider__img-container img {
+  object-fit: cover;
+}
+
 .slider__img-text {
   position: absolute;
 
@@ -442,6 +446,7 @@ a {
   justify-content: center;
   border-radius: 2rem;
   background-color: #55976d;
+  padding: 1rem;
 }
 
 .slider__img-text--2 .slider__text-box {
@@ -1748,6 +1753,14 @@ a {
 }
 
 @media (max-width: 72em) /* 1152px */ {
+  .slider__img-text--3 .slider__img-text--big {
+    font-size: 6rem;
+  }
+
+  .slider__img-text--3 .slider__img-text--small {
+    font-size: 3rem;
+  }
+
   .categories,
   .features,
   .weekly,
@@ -1785,13 +1798,27 @@ a {
     font-size: 1.6rem;
   }
 
-  .slider__img-text--big {
-    font-size: 10rem !important;
+  .slider__img-text--1 .slider__img-text--big {
+    font-size: 10rem;
   }
 
-  .slider__img-text--small {
-    font-size: 4rem !important;
+  .slider__img-text--1 .slider__img-text--small {
+    font-size: 4rem;
     font-style: italic;
+  }
+
+  .slider__img-text--2 .slider__img-icon {
+    font-size: 5.5rem;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .slider__img-text--2 .slider__img-text--big {
+    font-size: 6rem;
+  }
+
+  .slider__img-text--2 .slider__img-text--small {
+    font-size: 2rem;
   }
 
   .categories__container {
@@ -1905,12 +1932,48 @@ a {
     height: 50rem;
   }
 
-  .slider__img-text--big {
-    font-size: 6.4rem !important;
+  .slider__img-text--1 .slider__img-text--big {
+    font-size: 6.4rem;
   }
 
-  .slider__img-text--small {
-    font-size: 2.4rem !important;
+  .slider__img-text--1 .slider__img-text--small {
+    font-size: 2.4rem;
+  }
+
+  .slider__img-text--2 .slider__img-icon {
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .slider__img-text--2 .slider__img-text--big {
+    font-size: 4rem;
+  }
+
+  .slider__img-text--2 .slider__img-text--small {
+    font-size: 1rem;
+  }
+
+  .slider__img-text--3 .slider__img-text--big {
+    font-size: 4rem;
+  }
+
+  .slider__img-text--3 .slider__img-text--small {
+    font-size: 1.5rem;
+  }
+
+  .slider__img-text--4 .slider__img-text--big {
+    font-size: 5rem;
+  }
+
+  .slider__img-text--4 .slider__img-text--small {
+    font-size: 2rem;
+  }
+
+  .slider__img-text--4 button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .categories__container {
