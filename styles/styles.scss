@@ -1,8 +1,9 @@
-@import "./partials/variables";
-@import "./partials/mixins";
-@import "./partials/animations";
-@import "./partials/layout";
-@import "./partials/base";
+@import "./partials/abstracts/mixins";
+@import "./partials/abstracts/variables";
 
-@import "./partials/footer";
-@import "./partials/header";
+@import "./partials/base/animations";
+@import "./partials/base/base";
+
+@import "./partials/layout/layout";
+@import "./partials/layout/footer";
+@import "./partials/layout/header";
