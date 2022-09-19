@@ -1640,7 +1640,7 @@ p {
 
 /* MEDIA QUERIES */
 /* FOR HOME PAGE
---------------------------------------------------------- */
+  --------------------------------------------------------- */
 @media (max-width: 116.5em) /* 1864px */ {
   .slider__img-text {
     width: 80%;
@@ -2156,7 +2156,7 @@ p {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* FOR PRODUCTS PAGE
---------------------------------------------------------- */
+  --------------------------------------------------------- */
 @media (max-width: 65.5em) /* 1048px */ {
   .products__grid {
     grid-template-areas:
