@@ -1,0 +1,39 @@
+@keyframes left-to-right {
+  0% {
+    transform: skew(45deg) translateX(0%);
+  }
+
+  100% {
+    transform: skew(45deg) translateX(100%);
+  }
+}
+
+@keyframes left-to-right-back {
+  0% {
+    transform: skew(45deg) translateX(100%);
+  }
+
+  100% {
+    transform: skew(45deg) translateX(0%);
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    transform: skew(45deg) translateX(0%);
+  }
+
+  100% {
+    transform: skew(45deg) translateX(-100%);
+  }
+}
+
+@keyframes right-to-left-back {
+  0% {
+    transform: skew(45deg) translateX(-100%);
+  }
+
+  100% {
+    transform: skew(45deg) translateX(0%);
+  }
+}

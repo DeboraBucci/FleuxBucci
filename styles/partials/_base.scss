@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+/* SCROLLBAR  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-dark-purple;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-brown;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color-brown, 0.8);
+}
