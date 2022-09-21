@@ -1,4 +1,3 @@
-@import "./partials/abstracts/mixins";
 @import "./partials/abstracts/variables";
 
 @import "./partials/base/animations";
@@ -7,3 +6,13 @@
 @import "./partials/layout/layout";
 @import "./partials/layout/footer";
 @import "./partials/layout/header";
+
+@import "./partials/components/button";
+@import "./partials/components/heading";
+@import "./partials/components/slider";
+
+@import "./partials/pages/index";
+@import "./partials/pages/products";
+@import "./partials/pages/contact";
+@import "./partials/pages/us";
+@import "./partials/pages/cart";

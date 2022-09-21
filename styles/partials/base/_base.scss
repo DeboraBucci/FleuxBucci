@@ -42,3 +42,9 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba($color-brown, 0.8);
 }
+
+.current-path {
+  padding: 3rem 7rem;
+  font-size: 2rem;
+  color: $color-grey;
+}

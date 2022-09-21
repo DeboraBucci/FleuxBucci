@@ -1,0 +1,49 @@
+.heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+
+  h2 {
+    font-size: 4.8rem;
+    color: #3d314a;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: -1.25rem;
+    color: $color-brown;
+    font-size: 2rem;
+  }
+
+  &--start {
+    text-align: start;
+  }
+
+  @media (max-width: 67.5em) /* 1080px */ {
+    & {
+      margin-bottom: 2rem;
+    }
+
+    & h2 {
+      font-size: 4rem;
+    }
+
+    & p {
+      margin-top: -1rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 37.5em) /* 600px */ {
+    & {
+      margin-bottom: 1rem;
+    }
+
+    & h2 {
+      font-size: 3rem;
+    }
+
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+}

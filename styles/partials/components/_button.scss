@@ -1,0 +1,54 @@
+.btn__details {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-color: $color-purple;
+  color: $color-white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-gold;
+  }
+
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 80%;
+  }
+
+  &::after {
+    height: 70%;
+    width: 0.5rem;
+  }
+
+  &--small {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.6rem;
+
+    &::before,
+    &::after {
+      bottom: 0.5rem;
+    }
+
+    &::after {
+      right: 1rem;
+    }
+  }
+
+  &--medium {
+    padding: 1rem 4rem;
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+      bottom: 0.8rem;
+    }
+
+    &::after {
+      right: 1.5rem;
+    }
+  }
+}

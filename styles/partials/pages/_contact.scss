@@ -1,0 +1,153 @@
+.contact {
+  background-color: $color-white;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 4rem 0 8rem 0;
+    max-width: 92rem;
+    margin: 0 auto;
+  }
+
+  & .heading {
+    max-width: 92rem;
+    margin: 0 auto;
+  }
+
+  &__inputs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form button {
+    cursor: pointer;
+    border: none;
+    background-color: $color-purple;
+    color: $color-white;
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: rgba($color-purple, 0.8);
+    }
+  }
+
+  &__input-group {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid rgba($color-purple, 0.1);
+    border-radius: 1px;
+    width: 44rem;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    transition: all 0.2s;
+
+    & i {
+      width: 2rem;
+      color: rgba($color-purple, 0.7);
+    }
+
+    & label {
+      color: rgba($color-purple, 0.5);
+      position: absolute;
+      left: 4.5rem;
+      transition: all 0.2s;
+    }
+
+    & input,
+    & textarea {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: calc(100% - 3.5rem);
+      height: 100%;
+    }
+
+    /* ANIMATION OF LABEL GOING UP */
+    & input:focus + label,
+    & textarea:focus + label {
+      transform: translate(-3.3rem, -4rem);
+      color: $color-brown;
+    }
+
+    & input:not(:focus):not(:placeholder-shown) + label,
+    & textarea:not(:focus):not(:placeholder-shown) + label {
+      transform: translate(-3.3rem, -3rem);
+      color: rgba($color-purple, 0.5);
+    }
+
+    /* IMPORTANT FOR ANIMATION OF LABEL GOING UP */
+    & input::placeholder,
+    & textarea::placeholder {
+      color: transparent;
+    }
+
+    &:focus-within {
+      border-color: transparent;
+      box-shadow: 0 0 0 1rem rgba($color-purple, 0.2);
+    }
+
+    &:focus-within i {
+      color: $color-brown;
+    }
+  }
+
+  &__features {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__feature {
+    text-align: center;
+    width: 28rem;
+    color: rgba($color-purple, 0.7);
+
+    & i {
+      font-size: 4.8rem;
+    }
+
+    & h3 {
+      font-weight: 100;
+      font-size: 2.4rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+      color: rgba($color-purple, 0.5);
+    }
+  }
+
+  &__map {
+    position: relative;
+    overflow: hidden;
+    width: 95rem;
+  }
+
+  &__map-dot {
+    position: absolute;
+    font-size: 2.5rem;
+    color: crimson;
+
+    &--1 {
+      top: 20rem;
+    }
+
+    &--2 {
+      right: 3rem;
+      top: 11rem;
+    }
+
+    &--3 {
+      right: 40rem;
+      top: 30rem;
+    }
+  }
+}

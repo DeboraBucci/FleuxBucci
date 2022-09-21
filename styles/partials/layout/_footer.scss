@@ -6,66 +6,127 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 7rem;
-}
 
-.footer__first-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  &__first-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-.footer__brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
+  &__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
 
-.footer__social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
 
-.footer__icon-container {
-  display: flex;
-  gap: 2rem;
-}
+  &__icon-container {
+    display: flex;
+    gap: 2rem;
+  }
 
-.footer__social-media i {
-  font-size: 3.6rem;
-  padding-top: 1rem;
-}
+  &__social-media i {
+    font-size: 3.6rem;
+    padding-top: 1rem;
+  }
 
-.footer__icon--instagram {
-  color: #c27ac8;
-}
+  &__icon {
+    &--instagram {
+      color: #c27ac8;
+    }
 
-.footer__icon--twitter {
-  color: #5086b8;
-}
+    &--twitter {
+      color: #5086b8;
+    }
 
-.footer__icon--facebook {
-  color: #4054bb;
-}
+    &--facebook {
+      color: #4054bb;
+    }
+  }
 
-.footer__second-container {
-  display: flex;
-  text-align: center;
-  gap: 3rem;
-}
+  &__second-container {
+    display: flex;
+    text-align: center;
+    gap: 3rem;
 
-.footer__second-container h3 {
-  font-size: 2.6rem;
-  margin-bottom: 1rem;
-}
+    & h3 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
 
-.footer__second-container h4 {
-  font-size: 1.6rem;
-}
+    & h4 {
+      font-size: 1.6rem;
+    }
 
-.footer__second-container p {
-  font-size: 1.2rem;
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 67.5em) /* 1080px */ {
+    & {
+      flex-direction: column;
+      gap: 4rem;
+      padding: 3rem;
+      height: auto;
+    }
+
+    &__first-container {
+      gap: 0rem;
+    }
+
+    &__brand {
+      font-size: 2rem;
+    }
+
+    &__brand img {
+      width: 150px;
+    }
+
+    &__social-media {
+      font-size: 1.2rem;
+    }
+
+    &__icon-container {
+      gap: 1rem;
+    }
+
+    &__social-media i {
+      font-size: 2.6rem;
+      padding-top: 0.5rem;
+    }
+
+    &__second-container {
+      display: flex;
+      text-align: center;
+      gap: 3rem;
+    }
+
+    &__second-container h3 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__second-container h4 {
+      font-size: 1.2rem;
+    }
+
+    &__second-container p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 28em) /* 448px */ {
+    &__second-container {
+      flex-direction: column;
+    }
+  }
 }

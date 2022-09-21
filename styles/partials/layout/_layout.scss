@@ -3,17 +3,17 @@
   grid-template-rows: repeat(3, auto);
 }
 
-.products__grid {
-  display: grid;
-  grid-template-rows: auto 8rem repeat(2, auto);
-}
-
 .home__grid {
   grid-template-areas:
     "header"
     "main"
     "footer";
   grid-template-columns: 100%;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-rows: auto 8rem repeat(2, auto);
 }
 
 .products__grid {
