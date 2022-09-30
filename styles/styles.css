@@ -1564,6 +1564,7 @@ p {
 
 .contact {
   background-color: #f9f9f9;
+  padding: 0 2rem;
 }
 .contact__content {
   display: flex;
@@ -1573,6 +1574,16 @@ p {
   max-width: 92rem;
   margin: 0 auto;
 }
+@media (max-width: 62.5em) {
+  .contact__content {
+    gap: 7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .contact__content {
+    gap: 4rem;
+  }
+}
 .contact .heading {
   max-width: 92rem;
   margin: 0 auto;
@@ -1580,6 +1591,28 @@ p {
 .contact__inputs-container {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 62.5em) {
+  .contact__inputs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .contact__inputs-container {
+    width: 100%;
+  }
+}
+@media (max-width: 62.5em) {
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__form button {
+    max-width: 44rem;
+  }
 }
 .contact__form button {
   cursor: pointer;
@@ -1594,6 +1627,11 @@ p {
 .contact__form button:hover {
   transform: translateY(-2px);
   background-color: rgba(61, 48, 74, 0.8);
+}
+@media (max-width: 37.5em) {
+  .contact__main-group {
+    width: 100%;
+  }
 }
 .contact__input-group {
   position: relative;
@@ -1611,6 +1649,11 @@ p {
   /* ANIMATION OF LABEL GOING UP */
   /* IMPORTANT FOR ANIMATION OF LABEL GOING UP */
 }
+@media (max-width: 37.5em) {
+  .contact__input-group {
+    width: 100%;
+  }
+}
 .contact__input-group i {
   width: 2rem;
   color: rgba(61, 48, 74, 0.7);
@@ -1627,6 +1670,11 @@ p {
   outline: none;
   width: calc(100% - 3.5rem);
   height: 100%;
+}
+@media (max-width: 62.5em) {
+  .contact__input-group textarea {
+    height: 10rem;
+  }
 }
 .contact__input-group input:focus + label, .contact__input-group textarea:focus + label {
   transform: translate(-3.3rem, -4rem);
@@ -1664,6 +1712,14 @@ p {
   display: flex;
   gap: 4rem;
 }
+@media (max-width: 37.5em) {
+  .contact__features {
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
 .contact__feature {
   text-align: center;
   width: 28rem;
@@ -1680,10 +1736,24 @@ p {
   font-size: 1.6rem;
   color: rgba(61, 48, 74, 0.5);
 }
+@media (max-width: 37.5em) {
+  .contact__feature {
+    width: 100%;
+  }
+  .contact__feature i {
+    font-size: 3.2rem;
+  }
+  .contact__feature h3 {
+    font-size: 1.6rem;
+  }
+  .contact__feature p {
+    font-size: 1rem;
+  }
+}
 .contact__map {
   position: relative;
   overflow: hidden;
-  width: 95rem;
+  max-width: 95rem;
 }
 .contact__map-dot {
   position: absolute;
@@ -1700,6 +1770,21 @@ p {
 .contact__map-dot--3 {
   right: 40rem;
   top: 30rem;
+}
+@media (max-width: 68.75em) {
+  .contact .current-path {
+    text-align: left;
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .contact .current-path {
+    padding: 1rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
+  }
 }
 
 .us .heading {
