@@ -4,6 +4,12 @@
   border: none;
   background-color: $color-purple;
   color: $color-white;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: tint($color-purple, 10%);
+    transform: translateY(-3px);
+  }
 
   &::before,
   &::after {
