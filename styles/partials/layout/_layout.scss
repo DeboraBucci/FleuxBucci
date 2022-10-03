@@ -55,7 +55,7 @@
 
     & .current-path {
       align-self: flex-end;
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
     }
   }
 }

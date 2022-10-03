@@ -25,14 +25,14 @@
 
     & h4 {
       color: rgba($color-purple, 0.7);
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
       font-weight: 400;
       width: 18rem;
     }
 
     & p {
       color: $color-grey;
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
     }
   }
 
@@ -78,16 +78,16 @@
     }
 
     &__box i {
-      font-size: 4.8rem;
+      font-size: map-get($fontsizes, xxh);
     }
 
     &__box h4 {
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
       width: 18rem;
     }
 
     &__box p {
-      font-size: 1.4rem;
+      font-size: map-get($fontsizes, small);
     }
   }
 
@@ -105,16 +105,16 @@
     }
 
     &__box i {
-      font-size: 3rem;
+      font-size: map-get($fontsizes, huge);
     }
 
     &__box h4 {
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
       width: 18rem;
     }
 
     &__box p {
-      font-size: 1rem;
+      font-size: map-get($fontsizes, xtiny);
     }
   }
 }
@@ -379,7 +379,7 @@
     }
 
     &__box h3 {
-      font-size: 5rem;
+      font-size: map-get($fontsizes, xxh);
     }
   }
 
@@ -394,7 +394,7 @@
     }
 
     &__box h3 {
-      font-size: 4rem;
+      font-size: map-get($fontsizes, xh);
     }
   }
 }
@@ -434,7 +434,7 @@
     & h3 {
       color: $color-white;
       font-weight: 400;
-      font-size: 2.4rem;
+      font-size: map-get($fontsizes, xxl);
     }
   }
 
@@ -565,7 +565,7 @@
 
     & h3 {
       text-align: center;
-      font-size: 3.2rem;
+      font-size: map-get($fontsizes, huge);
       font-weight: 100;
     }
   }
@@ -573,12 +573,12 @@
   &__text {
     grid-column: 1/ 3;
     width: 45rem;
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);
     text-align: center;
   }
 
   &__name {
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);
   }
 
   &__footer {
@@ -652,7 +652,7 @@
 
     &__text {
       width: 35rem;
-      font-size: 1.8rem;
+      font-size: map-get($fontsizes, big);
       text-align: center;
 
       & p {
@@ -672,7 +672,7 @@
     }
 
     &__name {
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
     }
 
     &__card {
@@ -712,7 +712,7 @@
 
     &__text {
       width: 30rem;
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
       text-align: center;
     }
   }

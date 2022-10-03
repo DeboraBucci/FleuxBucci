@@ -88,14 +88,14 @@
       }
 
       &--big {
-        font-size: 6rem;
+        font-size: map-get($fontsizes, xxxh);
         text-shadow: 5px 5px 0 rgba($color-dark-purple, 0.2);
       }
 
       &--small {
         color: rgba($color-dark-purple, 0.7);
         border: 1px solid rgba($color-dark-purple, 0.7);
-        font-size: 3rem;
+        font-size: map-get($fontsizes, huge);
         padding: 1rem 2rem;
       }
     }
@@ -127,7 +127,7 @@
 
       &--small {
         cursor: pointer;
-        font-size: 4rem;
+        font-size: map-get($fontsizes, xh);
         padding: 1rem 2rem;
         color: $color-dark-purple;
         border: 1px solid $color-dark-purple;
@@ -158,7 +158,7 @@
       }
 
       &--small {
-        font-size: 3rem;
+        font-size: map-get($fontsizes, huge);
         width: 40rem;
         line-height: 3rem;
         margin-top: -1rem;
@@ -169,7 +169,7 @@
     & button {
       margin-top: 2rem;
       border: none;
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
       text-transform: uppercase;
       padding: 1rem 2rem;
       background-color: transparent;
@@ -224,11 +224,11 @@
 
   @media (max-width: 72em) /* 1152px */ {
     &__content--3 &__text--big {
-      font-size: 6rem;
+      font-size: map-get($fontsizes, xxxh);
     }
 
     &__content--3 &__text--small {
-      font-size: 3rem;
+      font-size: map-get($fontsizes, huge);
     }
   }
 
@@ -238,7 +238,7 @@
     }
 
     &__content--1 &__text--small {
-      font-size: 4rem;
+      font-size: map-get($fontsizes, xh);
       font-style: italic;
     }
 
@@ -249,11 +249,11 @@
     }
 
     &__content--2 &__text--big {
-      font-size: 6rem;
+      font-size: map-get($fontsizes, xxxh);
     }
 
     &__content--2 &__text--small {
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
     }
   }
 
@@ -267,25 +267,25 @@
     }
 
     &__content--1 &__text--small {
-      font-size: 2.4rem;
+      font-size: map-get($fontsizes, xxl);
     }
 
     &__content--2 &__img-icon {
-      font-size: 3rem;
+      font-size: map-get($fontsizes, huge);
       width: 4.5rem;
       height: 4.5rem;
     }
 
     &__content--2 &__text--big {
-      font-size: 4rem;
+      font-size: map-get($fontsizes, xh);
     }
 
     &__content--2 &__text--small {
-      font-size: 1rem;
+      font-size: map-get($fontsizes, xtiny);
     }
 
     &__content--3 &__text--big {
-      font-size: 4rem;
+      font-size: map-get($fontsizes, xh);
     }
 
     &__content--3 &__text--small {
@@ -293,16 +293,16 @@
     }
 
     &__content--4 &__text--big {
-      font-size: 5rem;
+      font-size: map-get($fontsizes, xxh);
     }
 
     &__content--4 &__text--small {
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
     }
 
     &__content--4 button {
       margin-top: 1rem;
-      font-size: 1rem;
+      font-size: map-get($fontsizes, xtiny);
       padding: 0.5rem 1rem;
     }
   }

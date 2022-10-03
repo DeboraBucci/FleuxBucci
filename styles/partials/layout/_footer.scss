@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: map-get($fontsizes, huge);
   }
 
   &__social-media {
@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);
   }
 
   &__icon-container {
@@ -58,16 +58,16 @@
     gap: 3rem;
 
     & h3 {
-      font-size: 2.6rem;
+      font-size: map-get($fontsizes, xxxl);
       margin-bottom: 1rem;
     }
 
     & h4 {
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
     }
 
     & p {
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
     }
   }
 
@@ -84,7 +84,7 @@
     }
 
     &__brand {
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
     }
 
     &__brand img {
@@ -92,7 +92,7 @@
     }
 
     &__social-media {
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
     }
 
     &__icon-container {
@@ -100,7 +100,7 @@
     }
 
     &__social-media i {
-      font-size: 2.6rem;
+      font-size: map-get($fontsizes, xxxl);
       padding-top: 0.5rem;
     }
 
@@ -111,16 +111,16 @@
     }
 
     &__second-container h3 {
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
       margin-bottom: 0.5rem;
     }
 
     &__second-container h4 {
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
     }
 
     &__second-container p {
-      font-size: 1rem;
+      font-size: map-get($fontsizes, xtiny);
     }
   }
 

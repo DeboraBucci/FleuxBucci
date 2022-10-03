@@ -3,7 +3,7 @@
   margin-bottom: 2.4rem;
 
   h2 {
-    font-size: 4.8rem;
+    font-size: map-get($fontsizes, xxh);
     color: #3d314a;
     font-weight: 400;
   }
@@ -11,7 +11,7 @@
   p {
     margin-top: -1.25rem;
     color: $color-brown;
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);
   }
 
   &--start {
@@ -24,12 +24,12 @@
     }
 
     & h2 {
-      font-size: 4rem;
+      font-size: map-get($fontsizes, xh);
     }
 
     & p {
       margin-top: -1rem;
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
     }
   }
 
@@ -39,11 +39,11 @@
     }
 
     & h2 {
-      font-size: 3rem;
+      font-size: map-get($fontsizes, huge);
     }
 
     & p {
-      font-size: 1.4rem;
+      font-size: map-get($fontsizes, small);
     }
   }
 }

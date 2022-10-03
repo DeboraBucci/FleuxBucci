@@ -45,6 +45,6 @@ p {
 
 .current-path {
   padding: 3rem 7rem;
-  font-size: 2rem;
+  font-size: map-get($fontsizes, large);
   color: $color-grey;
 }

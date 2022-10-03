@@ -31,7 +31,7 @@
   &__products th,
   &__price h3 {
     text-align: left;
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);;
     font-weight: 100;
     color: #6b6b6b;
     border-bottom: 4px solid $color-light-grey;
@@ -47,13 +47,13 @@
     }
 
     & h3 {
-      font-size: 1.4rem;
+      font-size: map-get($fontsizes, small);
       font-weight: 100;
       color: $color-second-purple;
     }
 
     & p {
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);;
       color: #5a5a5a;
     }
   }
@@ -79,7 +79,7 @@
       justify-content: center;
       width: 9.5rem;
       height: 3.5rem;
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
       color: #6b6b6b;
       border: 1px solid $color-light-grey;
     }
@@ -90,7 +90,7 @@
     }
 
     &--btn i {
-      font-size: 1rem;
+      font-size: map-get($fontsizes, xtiny);
     }
   }
 
@@ -128,7 +128,7 @@
   &__price button {
     width: 32%;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: map-get($fontsizes, small);
     border: 2px solid transparent;
     padding: 1rem 2rem;
   }
@@ -144,13 +144,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: map-get($fontsizes, default);
     padding: 4rem 0 1rem 0;
     color: #6b6b6b;
     border-bottom: 1px solid rgba($color-light-grey, 0.5);
 
     & p:not(:first-child) {
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
       color: $color-grey;
     }
 
@@ -160,7 +160,7 @@
   }
 
   &__price-total {
-    font-size: 2rem !important;
+    font-size: map-get($fontsizes, large); !important;
     color: $color-dark-purple !important;
   }
 }

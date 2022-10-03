@@ -2,6 +2,10 @@
   & .heading {
     max-width: 121rem;
     margin: 0 auto;
+
+    @media (max-width: 81em) /* 1296px */ {
+      padding: 0 2rem;
+    }
   }
 
   &__main {
@@ -11,12 +15,26 @@
     justify-content: center;
     gap: 7rem;
     padding: 8rem 0;
+
+    @media (max-width: 81em) /* 1296px */ {
+      gap: 5rem;
+    }
   }
 
   &__maps {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 121rem;
+
+    @media (max-width: 81em) /* 1296px */ {
+      width: 90%;
+    }
+
+    @media (max-width: 43.75em) /* 700px */ {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__map {
@@ -26,29 +44,28 @@
     padding: 3px;
 
     & p {
-      font-size: 2.4rem;
+      font-size: map-get($fontsizes, xxl);
       color: $color-gold;
     }
 
     & h3 {
       font-weight: 100;
-      font-size: 3.2rem;
+      font-size: map-get($fontsizes, huge);
       color: $color-white;
     }
 
     & div {
       position: absolute;
-      padding-top: 1rem;
-      bottom: 7px;
-      left: 3px;
-      width: calc(100% - 6px);
-      backdrop-filter: blur(2px);
+      padding: 1rem 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
       background-color: rgba(black, 0.8);
     }
 
     & i {
       position: absolute;
-      font-size: 2rem;
+      font-size: map-get($fontsizes, large);
       color: crimson;
     }
 
@@ -65,6 +82,63 @@
     &--3 i {
       bottom: 18rem;
       left: 1rem;
+    }
+
+    @media (max-width: 68.75em) /* 1100px */ {
+      & img {
+        width: 25rem;
+      }
+
+      & p {
+        font-size: map-get($fontsizes, default);
+      }
+
+      & h3 {
+        font-size: map-get($fontsizes, large);
+      }
+
+      & i {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 56.25em) /* 900px */ {
+      & img {
+        width: 20rem;
+      }
+
+      & p {
+        font-size: map-get($fontsizes, small);
+      }
+
+      & h3 {
+        font-size: map-get($fontsizes, default);
+      }
+
+      & i {
+        font-size: map-get($fontsizes, tiny);
+      }
+    }
+
+    @media (max-width: 43.75em) /* 700px */ {
+      height: 20rem;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+      }
+
+      & p {
+        font-size: map-get($fontsizes, small);
+      }
+
+      & h3 {
+        font-size: map-get($fontsizes, default);
+      }
+
+      & i {
+        font-size: map-get($fontsizes, tiny);
+      }
     }
   }
 
@@ -90,16 +164,16 @@
     color: rgba($color-purple, 0.7);
 
     & i {
-      font-size: 4.8rem;
+      font-size: map-get($fontsizes, xxh);
     }
 
     & h3 {
-      font-size: 2.4rem;
+      font-size: map-get($fontsizes, xxl);
       font-weight: 100;
     }
 
     & p {
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
       color: rgba($color-purple, 0.5);
     }
   }
@@ -110,5 +184,9 @@
     justify-content: center;
     height: 55rem;
     overflow: hidden;
+
+    @media (max-width: 81em) /* 1296px */ {
+      display: none;
+    }
   }
 }

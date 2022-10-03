@@ -4,7 +4,7 @@
   &__title {
     position: relative;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: map-get($fontsizes, huge);
     font-weight: 100;
     color: $color-dark-purple;
     margin-bottom: 2rem;
@@ -31,7 +31,7 @@
     align-items: center;
     cursor: pointer;
     height: 3.2rem;
-    font-size: 1.6rem;
+    font-size: map-get($fontsizes, default);
     border-bottom: 1px solid $color-light-grey;
 
     & span {
@@ -70,7 +70,7 @@
       cursor: pointer;
       text-align: center;
       padding: 0.5rem;
-      font-size: 1.6rem;
+      font-size: map-get($fontsizes, default);
       color: $color-grey;
     }
 
@@ -81,7 +81,7 @@
 
   &__active-span {
     color: $color-gold !important;
-    font-size: 1.8rem !important;
+    font-size: map-get($fontsizes, big); !important;
   }
 
   @media (max-width: 65.5em) /* 1048px */ {
@@ -97,7 +97,7 @@
   cursor: pointer;
   width: 3rem;
   padding: 2rem 0;
-  font-size: 1.6rem;
+  font-size: map-get($fontsizes, default);
   color: rgba($color-purple, 0.7);
   background-color: rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba($color-purple, 0.7);
@@ -119,7 +119,7 @@
   text-align: end;
 
   &__text {
-    font-size: 1.2rem;
+    font-size: map-get($fontsizes, tiny);
     color: $color-grey;
   }
 
@@ -183,12 +183,12 @@
   }
 
   &__text p:first-child {
-    font-size: 1.6rem;
+    font-size: map-get($fontsizes, default);
     color: $color-second-purple;
   }
 
   &__text p:nth-child(2) {
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);;
     color: $color-grey;
   }
 
@@ -240,11 +240,11 @@
         height: 5rem;
 
         & p:first-child {
-          font-size: 1.2rem;
+          font-size: map-get($fontsizes, tiny);
         }
 
         & p:nth-child(2) {
-          font-size: 1.4rem;
+          font-size: map-get($fontsizes, small);
         }
       }
 

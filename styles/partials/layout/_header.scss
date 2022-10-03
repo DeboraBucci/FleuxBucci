@@ -21,7 +21,7 @@
     display: flex;
     gap: 2rem;
     height: 100%;
-    font-size: 2.4rem;
+    font-size: map-get($fontsizes, xxl);
   }
 
   &__link {
@@ -116,7 +116,7 @@
   @media (max-width: 28em) /* 448px */ {
     &__list {
       gap: 1rem;
-      font-size: 1.2rem;
+      font-size: map-get($fontsizes, tiny);
     }
 
     &__link {

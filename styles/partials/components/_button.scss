@@ -26,7 +26,7 @@
 
   &--small {
     padding: 0.5rem 2.5rem;
-    font-size: 1.6rem;
+    font-size: map-get($fontsizes, default);
 
     &::before,
     &::after {
@@ -40,7 +40,7 @@
 
   &--medium {
     padding: 1rem 4rem;
-    font-size: 2rem;
+    font-size: map-get($fontsizes, large);
 
     &::before,
     &::after {
