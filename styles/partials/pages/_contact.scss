@@ -40,10 +40,8 @@
 
   &__form {
     @media (max-width: 62.5em) /* 1000px */ {
-      display: flex;
+      @include centeredFlex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
       & button {
         max-width: 44rem;

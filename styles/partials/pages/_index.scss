@@ -8,10 +8,8 @@
   }
 
   &__box {
-    display: flex;
+    @include centeredFlex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
 
     width: 25rem;
@@ -248,13 +246,11 @@
   }
 
   &__title {
+    @include centeredFlex;
     position: absolute;
     z-index: 15;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   &__box:hover::before {
@@ -426,9 +422,7 @@
   }
 
   &__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
     height: 5rem;
 
     & h3 {
@@ -548,9 +542,7 @@
     bottom: 5rem;
     left: 2.6rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
 
     height: 10rem;
     width: 10rem;
@@ -582,10 +574,8 @@
   }
 
   &__footer {
+    @include centeredFlex;
     grid-column: 1 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
     padding-right: 1rem;
   }

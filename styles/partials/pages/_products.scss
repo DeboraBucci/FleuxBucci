@@ -81,7 +81,7 @@
 
   &__active-span {
     color: $color-gold !important;
-    font-size: map-get($fontsizes, big); !important;
+    font-size: map-get($fontsizes, big) !important;
   }
 
   @media (max-width: 65.5em) /* 1048px */ {
@@ -153,10 +153,8 @@
 }
 
 .product-card {
+  @include centeredFlex;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 25rem;
   height: 35rem;
   overflow: hidden;
@@ -188,7 +186,7 @@
   }
 
   &__text p:nth-child(2) {
-    font-size: map-get($fontsizes, large);;
+    font-size: map-get($fontsizes, large);
     color: $color-grey;
   }
 
@@ -203,9 +201,7 @@
   }
 
   &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
     height: 5rem;
   }
 

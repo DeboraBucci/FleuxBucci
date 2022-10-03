@@ -14,17 +14,13 @@
   }
 
   &__brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex;
     font-size: map-get($fontsizes, huge);
   }
 
   &__social-media {
-    display: flex;
+    @include centeredFlex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: map-get($fontsizes, large);
   }
 
