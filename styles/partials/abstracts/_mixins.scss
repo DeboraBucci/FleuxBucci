@@ -1,3 +1,5 @@
 @mixin centeredFlex {
-  @include centeredFlex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

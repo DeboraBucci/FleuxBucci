@@ -1,16 +1,5 @@
 .btn__details {
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background-color: $color-purple;
-  color: $color-white;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: $color-gold;
-  }
+  @extend %defaultBtn;
 
   &::before {
     left: 50%;
