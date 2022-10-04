@@ -434,7 +434,7 @@ p {
 }
 .heading p {
   margin-top: -1.25rem;
-  color: #96705b;
+  color: #73472f;
   font-size: 2rem;
 }
 .heading--start {
@@ -754,7 +754,7 @@ p {
   width: 18rem;
 }
 .features__box p {
-  color: #929292;
+  color: #767676;
   font-size: 2rem;
 }
 @media (max-width: 72em) {
@@ -1063,6 +1063,9 @@ p {
 }
 .weekly h2 {
   color: #f9f9f9;
+}
+.weekly p {
+  color: #ff9c67;
 }
 .weekly__container {
   display: flex;

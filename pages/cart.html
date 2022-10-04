@@ -34,7 +34,6 @@
     />
 
     <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" href="../old-styles.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
@@ -98,7 +97,11 @@
                 <div class="cart__x">
                   <i class="fa-regular fa-circle-xmark"></i>
                 </div>
-                <img width="50px" src="../assets/cart/cart-img-1.webp" />
+                <img
+                  width="50px"
+                  src="../assets/cart/cart-img-1.webp"
+                  alt="solid circular oak table"
+                />
                 <h3>Solid Circular Oak Table</h3>
               </td>
               <td><p>$ 624.99</p></td>
@@ -121,7 +124,11 @@
                 <div class="cart__x">
                   <i class="fa-regular fa-circle-xmark"></i>
                 </div>
-                <img width="50px" src="../assets/cart/cart-img-2.webp" />
+                <img
+                  width="50px"
+                  src="../assets/cart/cart-img-2.webp"
+                  alt="rectangular maple wooden table"
+                />
                 <h3>Rectangular Maple Wooden Table</h3>
               </td>
               <td><p>$ 392.00</p></td>
@@ -144,7 +151,11 @@
                 <div class="cart__x">
                   <i class="fa-regular fa-circle-xmark"></i>
                 </div>
-                <img width="50px" src="../assets/cart/cart-img-3.webp" />
+                <img
+                  width="50px"
+                  src="../assets/cart/cart-img-3.webp"
+                  alt="l-shaped black premium lether couch"
+                />
                 <h3>L-shaped black premium leather couch</h3>
               </td>
               <td><p>$ 1202.10</p></td>
@@ -185,8 +196,8 @@
               <p>Estimated time of 15 days after purchase</p>
             </div>
             <div class="cart__price-item">
-              <p>Coupon Code</p>
-              <input type="text" />
+              <label for="coupon">Coupon Code</label>
+              <input name="coupon" id="coupon" type="text" />
             </div>
             <div class="cart__price-item">
               <p>Total</p>
@@ -201,7 +212,12 @@
     <footer class="footer">
       <div class="footer__first-container">
         <div class="footer__brand">
-          <img src="../assets/logo-purple-background.webp" />
+          <img
+            src="../assets/logo-purple-background.webp"
+            height="80px"
+            width="200px"
+            alt="logo"
+          />
           <p>| &copy;2022</p>
         </div>
         <div class="footer__social-media">
@@ -211,6 +227,7 @@
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instragram"
             >
               <i class="fa-brands fa-instagram footer__icon--instagram"></i>
             </a>
@@ -218,6 +235,7 @@
               href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Twitter"
             >
               <i class="fa-brands fa-twitter footer__icon--twitter"></i>
             </a>
@@ -225,6 +243,7 @@
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
             >
               <i class="fa-brands fa-facebook-f footer__icon--facebook"></i>
             </a>
