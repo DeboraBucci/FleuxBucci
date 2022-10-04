@@ -1358,6 +1358,15 @@ p {
   display: flex;
   flex-direction: column;
 }
+.sidebar .active-li .sidebar__item {
+  border: none !important;
+}
+.sidebar .active-li .sidebar__item i {
+  color: #ad8850;
+}
+.sidebar .active-li .sidebar__item-list {
+  display: block;
+}
 .sidebar__item {
   display: flex;
   justify-content: space-between;
@@ -1374,14 +1383,9 @@ p {
 .sidebar__item i {
   color: #d9d9d9;
 }
-.sidebar__item--active {
-  border: none !important;
-}
-.sidebar__item--active i {
-  color: #ad8850;
-}
 .sidebar__item-list {
   position: relative;
+  display: none;
 }
 .sidebar__item-list::before {
   content: "";

@@ -25,6 +25,20 @@
     flex-direction: column;
   }
 
+  .active-li {
+    .sidebar__item {
+      border: none !important;
+    }
+
+    .sidebar__item i {
+      color: $color-gold;
+    }
+
+    .sidebar__item-list {
+      display: block;
+    }
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
@@ -42,18 +56,11 @@
     & i {
       color: $color-light-grey;
     }
-
-    &--active {
-      border: none !important;
-    }
-
-    &--active i {
-      color: $color-gold;
-    }
   }
 
   &__item-list {
     position: relative;
+    display: none;
 
     &::before {
       content: "";
