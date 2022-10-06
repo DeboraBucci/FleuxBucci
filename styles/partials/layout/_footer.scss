@@ -16,6 +16,10 @@
   &__brand {
     @include centeredFlex;
     font-size: map-get($fontsizes, huge);
+
+    & img {
+      height: auto;
+    }
   }
 
   &__social-media {

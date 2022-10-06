@@ -185,6 +185,9 @@ p {
   justify-content: center;
   font-size: 3rem;
 }
+.footer__brand img {
+  height: auto;
+}
 .footer__social-media {
   display: flex;
   align-items: center;
@@ -433,7 +436,7 @@ p {
 }
 .heading p {
   margin-top: -1.25rem;
-  color: #96705b;
+  color: #73472f;
   font-size: 2rem;
 }
 .heading--start {
@@ -774,7 +777,7 @@ p {
   width: 18rem;
 }
 .features__box p {
-  color: #929292;
+  color: #767676;
   font-size: 2rem;
 }
 @media (max-width: 72em) {
@@ -1084,6 +1087,9 @@ p {
 .weekly h2 {
   color: #f9f9f9;
 }
+.weekly p {
+  color: #ff9c67;
+}
 .weekly__container {
   display: flex;
   justify-content: center;
@@ -1276,6 +1282,7 @@ p {
   }
   .testimonials__quote {
     width: 90px;
+    height: 90px;
   }
   .testimonials__text {
     width: 35rem;
@@ -1293,6 +1300,7 @@ p {
   }
   .testimonials__face img {
     width: 80px;
+    height: 80px;
   }
   .testimonials__name {
     font-size: 1.6rem;

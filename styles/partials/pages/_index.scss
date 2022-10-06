@@ -29,7 +29,7 @@
     }
 
     & p {
-      color: $color-grey;
+      color: #767676;
       font-size: map-get($fontsizes, large);
     }
   }
@@ -404,6 +404,10 @@
     color: $color-white;
   }
 
+  & p {
+    color: #ff9c67;
+  }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -638,6 +642,7 @@
 
     &__quote {
       width: 90px;
+      height: 90px;
     }
 
     &__text {
@@ -658,6 +663,7 @@
 
       & img {
         width: 80px;
+        height: 80px;
       }
     }
 
