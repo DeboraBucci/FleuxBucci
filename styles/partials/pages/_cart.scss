@@ -2,6 +2,7 @@
   min-height: calc(100vh - 38rem);
 
   &__main {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -9,32 +10,38 @@
     width: 120rem;
     margin: 0 auto;
     padding: 2rem 0;
+
+    @media (max-width: 81.25em) /* 1300px */ {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: auto;
+      gap: 4rem;
+    }
+
+    table {
+      margin-bottom: 1rem;
+    }
   }
 
-  & .heading {
-    width: 120rem;
-    margin: 0 auto;
-    padding-bottom: 3rem;
-  }
-
-  &__first-container {
+  &__products {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__products {
+  &__table {
     width: 60rem;
     border-collapse: collapse;
-  }
 
-  &__products th,
-  &__price h3 {
-    text-align: left;
-    font-size: map-get($fontsizes, large);
-    font-weight: 100;
-    color: #6b6b6b;
-    border-bottom: 4px solid $color-light-grey;
+    @media (max-width: 81.25em) /* 1300px */ {
+      width: 70vw;
+    }
+
+    @media (max-width: 56.25em) /* 900px */ {
+      width: 90vw;
+    }
   }
 
   &__item {
@@ -55,18 +62,12 @@
     & p {
       font-size: map-get($fontsizes, large);
       color: #5a5a5a;
+
+      @media (max-width: 48em) /* 768px */ {
+        font-size: map-get($fontsizes, small);
+        width: max-content;
+      }
     }
-  }
-
-  &__products hr,
-  &__item td {
-    padding: 1rem 2rem 1rem 0;
-  }
-
-  &__x {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: $color-light-grey;
   }
 
   &__quantity {
@@ -90,12 +91,24 @@
     &--btn i {
       font-size: map-get($fontsizes, xtiny);
     }
+
+    @media (max-width: 48em) /* 768px */ {
+      & div {
+        width: 8rem;
+        height: 3rem;
+        font-size: map-get($fontsizes, small);
+      }
+    }
   }
 
-  &__first-cta {
+  &__products-cta {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    & button {
+      width: 32%;
+    }
 
     &--filled {
       background-color: rgba($color-second-purple, 0.7);
@@ -109,6 +122,12 @@
     }
   }
 
+  &__x {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $color-light-grey;
+  }
+
   &__price {
     width: 50rem;
     display: flex;
@@ -120,22 +139,18 @@
       background-color: $color-gold;
       color: $color-white;
     }
+
+    @media (max-width: 81.25em) /* 1300px */ {
+      width: 70vw;
+    }
+
+    @media (max-width: 56.25em) /* 900px */ {
+      width: 90vw;
+    }
   }
 
-  &__first-cta button,
-  &__price button {
-    width: 32%;
-    cursor: pointer;
-    font-size: map-get($fontsizes, small);
-    border: 2px solid transparent;
-    padding: 1rem 2rem;
-  }
-
-  &__line {
-    width: 1px;
-    height: 80%;
-    align-self: center;
-    background-color: rgba($color-light-grey, 0.4);
+  &__price-text {
+    margin-bottom: 1rem;
   }
 
   &__price-item {
@@ -160,5 +175,42 @@
   &__price-total {
     font-size: map-get($fontsizes, large) !important;
     color: $color-dark-purple !important;
+  }
+
+  &__table th,
+  &__price h3 {
+    text-align: left;
+    font-size: map-get($fontsizes, large);
+    font-weight: 100;
+    color: #6b6b6b;
+    border-bottom: 4px solid $color-light-grey;
+  }
+
+  &__table hr,
+  &__item td {
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  &__products-cta button,
+  &__price button {
+    cursor: pointer;
+    font-size: map-get($fontsizes, small);
+    border: 2px solid transparent;
+    padding: 1rem 2rem;
+
+    @media (max-width: 48em) /* 768px */ {
+      font-size: map-get($fontsizes, xtiny);
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+.cart .heading {
+  width: 120rem;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+
+  @media (max-width: 81.25em) /* 1300px */ {
+    width: 80vw;
   }
 }
