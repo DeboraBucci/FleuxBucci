@@ -15,6 +15,10 @@
     margin: 0 !important;
   }
 
+  & h1 {
+    @include centeredFlex;
+  }
+
   &__logo {
     @include centeredFlex;
   }

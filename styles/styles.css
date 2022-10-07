@@ -292,6 +292,11 @@ p {
 .header ul {
   margin: 0 !important;
 }
+.header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .header__logo {
   display: flex;
   align-items: center;
@@ -1547,7 +1552,6 @@ p {
   z-index: 1;
   transition: all 0.2s;
   width: 100%;
-  height: auto;
 }
 .product-card:hover .product-card__content {
   transform: translateY(-6rem);
