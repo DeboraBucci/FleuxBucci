@@ -38,9 +38,11 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="../index.html"
-        ><img src="../assets/logo-blue-background.webp" alt="logo"
-      /></a>
+      <h1>
+        <a class="header__logo" href="../index.html"
+          ><img src="../assets/logo-blue-background.webp" alt="logo"
+        /></a>
+      </h1>
 
       <nav class="header__navbar">
         <ul class="header__list">
@@ -82,8 +84,8 @@
       </div>
 
       <main class="cart__main">
-        <div class="cart__first-container">
-          <table class="cart__products">
+        <div class="cart__products">
+          <table class="cart__table">
             <!-- HEADINGS -->
             <tr>
               <th>PRODUCT</th>
@@ -173,21 +175,20 @@
             </tr>
           </table>
 
-          <div class="cart__first-cta">
-            <button class="cart__first-cta--border">
+          <div class="cart__products-cta">
+            <button class="cart__products-cta--border">
               <i class="fa-solid fa-chevron-left"></i> KEEP BUYING
             </button>
 
-            <button class="cart__first-cta--filled">
+            <button class="cart__products-cta--filled">
               <i class="fa-solid fa-rotate-right"></i> REFRESH CART
             </button>
 
-            <button class="cart__first-cta--border">
+            <button class="cart__products-cta--border">
               <i class="fa-solid fa-trash-can"></i> EMPTY CART
             </button>
           </div>
         </div>
-        <div class="cart__line"></div>
         <div class="cart__price">
           <div class="cart__price-text">
             <h3>CART'S TOTAL PRICE</h3>

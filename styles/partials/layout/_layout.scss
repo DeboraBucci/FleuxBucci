@@ -50,12 +50,7 @@
         "sidebar-opener section section section"
         "footer footer footer footer ";
       grid-template-columns: 10% 8% auto;
-      grid-template-rows: auto 3rem repeat(2, auto);
-    }
-
-    & .current-path {
-      align-self: flex-end;
-      font-size: map-get($fontsizes, tiny);
+      grid-template-rows: auto 5rem repeat(2, auto);
     }
   }
 }

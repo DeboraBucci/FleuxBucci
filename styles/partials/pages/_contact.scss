@@ -218,19 +218,4 @@
       top: 30rem;
     }
   }
-
-  & .current-path {
-    @media (max-width: 68.75em) /* 1100px */ {
-      text-align: left;
-      padding: 2rem 1rem;
-      font-size: map-get($fontsizes, default);
-    }
-
-    @media (max-width: 37.5em) /* 600px */ {
-      padding: 1rem;
-      padding-top: 2rem;
-      font-size: map-get($fontsizes, tiny);
-      margin-bottom: -0.5rem;
-    }
-  }
 }

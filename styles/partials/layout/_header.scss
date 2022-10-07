@@ -11,6 +11,14 @@
   height: 8rem;
   padding: 0 7rem;
 
+  & ul {
+    margin: 0 !important;
+  }
+
+  & h1 {
+    @include centeredFlex;
+  }
+
   &__logo {
     @include centeredFlex;
   }
@@ -40,6 +48,11 @@
       width: 0;
       background-color: $color-link-active;
       transition: all 0.3s ease-out;
+
+      @media (max-width: 50em) /* 800px */ {
+        height: 4px;
+        bottom: -4px;
+      }
     }
 
     & i {

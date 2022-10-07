@@ -17,6 +17,10 @@
     @media (max-width: 81em) /* 1296px */ {
       gap: 5rem;
     }
+
+    @media (max-width: 50em) /* 800px */ {
+      padding-bottom: 0;
+    }
   }
 
   &__maps {
@@ -154,6 +158,17 @@
     grid-template-rows: repeat(2, max-content);
     gap: 6rem;
     text-align: center;
+
+    @media (max-width: 50em) /* 800px */ {
+      padding: 0 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, max-content);
+      gap: 4rem;
+    }
+
+    @media (max-width: 37.5em) /* 600px */ {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__feature {
@@ -171,6 +186,38 @@
     & p {
       font-size: map-get($fontsizes, default);
       color: rgba($color-purple, 0.5);
+    }
+
+    @media (max-width: 50em) /* 800px */ {
+      & i {
+        font-size: map-get($fontsizes, large);
+      }
+
+      & h3 {
+        font-size: map-get($fontsizes, large);
+        font-weight: 100;
+      }
+
+      & p {
+        font-size: map-get($fontsizes, small);
+        color: rgba($color-purple, 0.5);
+      }
+    }
+
+    @media (max-width: 37.5em) /* 600px */ {
+      & i {
+        font-size: map-get($fontsizes, default);
+      }
+
+      & h3 {
+        font-size: map-get($fontsizes, default);
+        font-weight: 100;
+      }
+
+      & p {
+        font-size: map-get($fontsizes, tiny);
+        color: rgba($color-purple, 0.5);
+      }
     }
   }
 

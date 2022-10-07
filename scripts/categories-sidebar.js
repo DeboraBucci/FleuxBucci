@@ -1,5 +1,6 @@
 const categoriesEl = document.querySelectorAll(".sidebar__item");
 
+// OPEN AND CLOSE ITEMS
 categoriesEl.forEach((el) => {
   el.addEventListener("click", (e) => {
     const allItemEl = categoriesEl;
