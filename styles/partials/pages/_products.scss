@@ -86,14 +86,16 @@
     }
   }
 
-  &__active-span {
-    color: $color-gold !important;
-    font-size: map-get($fontsizes, big) !important;
-  }
-
   @media (max-width: 65.5em) /* 1048px */ {
     & {
       display: none;
+    }
+  }
+
+  &__option {
+    &--active {
+      color: $color-gold !important;
+      font-size: map-get($fontsizes, big) !important;
     }
   }
 }

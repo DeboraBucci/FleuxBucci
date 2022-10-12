@@ -1437,14 +1437,14 @@ p {
 .sidebar__item-list li:hover {
   color: rgba(173, 136, 80, 0.8);
 }
-.sidebar__active-span {
-  color: #ad8850 !important;
-  font-size: 1.8rem !important;
-}
 @media (max-width: 65.5em) {
   .sidebar {
     display: none;
   }
+}
+.sidebar__option--active {
+  color: #ad8850 !important;
+  font-size: 1.8rem !important;
 }
 
 .sidebar-opener {
